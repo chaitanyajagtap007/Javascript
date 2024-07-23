@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(true){
+            // statement
+        }
+        else{
+            // False
+        }
+
+
+        var a=1;
+        if(a>10){
+            document.write("The no is Big")
+        }
+        else{
+            
+            document.write("The no is not Big")
+        }
+
+
+
+
+        document.write("<h1>odd/even</h1>");
+        var a=10;
+        if(a%2==0){
+            document.write("The no is even<br>");
+        }
+        else{
+            document.write("The no is odd<br>");
+        }
+
+        
+        document.write("<h1>vote</h1>");
+        var age=18;
+        if(age>=18){
+            document.write("you are able to donate vote<br>");
+        }
+        else{
+            
+            document.write("you are not able to donate vote<br>");
+        }
+
+
+        
+        document.write("<h1>discount</h1>");
+       var a=5000
+        if(a>=5000){
+            var dis=(a*10)/100;
+            document.write(`<br>The original price of product is :`+ a);
+            a=a-dis;
+            document.write(`<br> discount is 10% 'i.e' :`+ dis);
+            document.write(`<br> The total price of product  after 10% discount is :`+ a);
+        }
+        else{
+            document.write("<br>you are not able to discount")
+            document.write(`<br>The original price of product is :`+ a);
+        }
+
+
+
+
+
+
+
+        document.write("<h1>per(%)</h1>");
+// pass or fail
+   var s1=40;
+   var s2=40;
+   var s3=40;
+   var s4=40;
+   var s5=40;
+   var s6=40;
+   var total= s1+s2+s3+s4+s5+s6;
+   var per=total/6;
+        if(per>=35)
+        {
+            document.write("<br>Pass");
+            document.write("<br> The precentage is:"+per);
+            document.write("%");
+        }
+        else
+        {
+            document.write("Fail");
+            document.write("<br> The precentage is:"+per);
+            document.write("%");
+        }
+        
+    </script>
+</body>
+</html>

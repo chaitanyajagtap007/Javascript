@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>object</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// object
+		// key:value;
+		// two types
+		// 1 constracter
+		// new object(key:value,key:value,n:n);
+		// 2 object
+		// {key:value,key1:value,n:n}
+
+
+
+
+
+// short cut
+	
+	var obj={"sname":"ram",
+		"email":"ram123@gmail.com",
+		"phone":7823887531,
+		"address":"nagar",
+		"pincode":"785477"
+	};
+		obj.sname="chaithanya";
+		
+		console.log(obj);  
+		
+		//  object print karnya sathi object consol madhe print hota.
+
+		
+		// document.write(obj.sname+"<br>");
+		// document.write(obj.email+"<br>");
+		// document.write(obj.phone+"<br>");
+		// document.write(obj.address+"<br>");
+		// document.write(obj.pincode+"<br>");
+
+		for(key in obj){
+			document.write("<br>"+key);
+			document.write(":"+obj[key]);
+		}
+
+
+// full syntax
+		// var obj1=new Object();
+		// obj1.name="Crj";
+		// obj1.email="Crj@gmail.com";
+		// obj1.phone=7823887531;
+		// console.log(obj1);
+		// document.write("name="+obj1.name);
+
+
+
+
+		// obj in function(){
+		// var name1={
+		// 	"fname":"chaithanya",
+		// 	"lname":"jagtap",
+		// 	"fullname":function(){
+		// 			return this.fname+" "+this.lname;
+		// 		}
+		// 	}
+		// }
+		// document.write(name1.fullname());
+		// document.write(name1.fname);
+		// document.write(name1.lname);
+
+
+
+
+
+
+
+
+
+		var obj1={
+			"sname":"Ram",
+			"email":"ram@gmail.com",
+			"address":"nagar",
+			"pincode":758493,
+			"phone":6578493543,
+			"sname1":"Ram",
+			"email1":"ram@gmail.com",
+			"address1":"nagar",
+			"pincode1":758493,
+			"phone1":6578493543
+		};
+
+
+
+
+
+		//  for in
+		for(key in obj1){
+			document.write("<br>"+key);
+			document.write(":"+obj1[key]);
+		}
+		
+	</script>
+
+<br>
+<br>
+<br>
+<br>
+	<script type="text/javascript">
+
+
+
+
+		// nested object
+
+
+		// var obj={
+		// 	key:{
+		// 		key:value
+		// 	}
+		// }
+
+
+		var student={
+			"student1":{
+				"name":"student1",
+				"email":"student1@gmail.com"
+			},
+			"student2":{
+				"name":"student2",
+				"email":"student2@gmail.com"
+			},
+			"student3":{
+				"name":"student3",
+				"email":"student3@gmail.com"
+			},
+			"student4":{
+				"name":"student4",
+				"email":"student4@gmail.com"
+			}
+		}
+		// document.write(student.student1.name+":");
+		// document.write(student.student2.name+":");  
+		// console.log(student)
+		for(key in student){
+			document.write("<br>"+key);
+			document.write(":");
+			for(key1 in student[key]){
+				document.write("<br>"+key1);   
+				document.write(":"+student[key][key1]);
+			}
+		}
+	</script> 
+</body>
+</html>

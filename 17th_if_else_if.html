@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=10;
+        var b=30;
+        var c=50;
+        if(a>b && a>c){
+            document.write("A  is Big")
+        }
+        else if(b>a && b>c){
+            document.write("B  is Big")
+        }
+        else 
+        {
+            document.write("C  is Big")
+        }
+
+
+
+
+
+
+
+
+
+        document.write("<h1>discount</h1>");
+       var a=5000
+       if(a<5000){
+            document.write("<br>you are not able to discount")
+            document.write(`<br>The original price of product is :`+ a);
+       }
+       else if(a>=5000 && a<10000){
+            var dis=(a*10)/100;
+            document.write(`<br>The original price of product is :`+ a);
+            a=a-dis;
+            document.write(`<br> discount is 10% 'i.e' :`+ dis);
+            document.write(`<br> The total price of product  after 10% discount is :`+ a);
+        }
+       else if(a>=10000 && a<15000){
+            var dis=(a*20)/100;
+            document.write(`<br>The original price of product is :`+ a);
+            a=a-dis;
+            document.write(`<br> discount is 20% 'i.e' :`+ dis);
+            document.write(`<br> The total price of product  after 20% discount is :`+ a);
+        } 
+       else if(a>=15000 && a<20000){
+            var dis=(a*25)/100;
+            document.write(`<br>The original price of product is :`+ a);
+            a=a-dis;
+            document.write(`<br> discount is 25% 'i.e' :`+ dis);
+            document.write(`<br> The total price of product  after 25% discount is :`+ a);
+        }
+       else if(a>=20000){
+            var dis=(a*20)/100;
+            document.write(`<br>The original price of product is :`+ a);
+            a=a-dis;
+            document.write(`<br> discount is 30% 'i.e' :`+ dis);
+            document.write(`<br> The total price of product  after 30% discount is :`+ a);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a=1;
+        // do {
+        //     document.write("<h1>"+a+"<h1>");
+        //     a++;
+        // } while (a<=10);
+
+
+
+
+        var i=1;
+        var t=0;
+        do {
+            document.write("&nbsp"+i)
+            t=t+i;
+            i++;    
+        } while (i<=100);
+        document.write("<h1> the addition is:"+t+"</h1>");
+
+
+
+
+        document.write("<h1> odd no</h1>");
+        var i=1;
+        var t=0;
+        do {
+            if(i%2!=0){
+                document.write("&nbsp"+i)
+                t=t+i;
+            }  
+            i++;
+        } while (i<=100);
+        document.write("<h1> the addition of odd no is:"+t+"</h1>");
+
+
+
+        
+        var i=1;
+        var t=0;
+        do {
+            if(i%2==0){
+                document.write("&nbsp"+i)
+                t=t+i;
+            }  
+            i++;
+        } while (i<=100);
+        document.write("<h1> the addition of odd no is:"+t+"</h1>");
+
+
+        
+        
+        var i=100;
+        do {
+            document.write("&nbsp"+i);
+            i--;
+        } while (i>=1);
+
+
+
+
+        var i=1;
+        var t=0;
+        do {
+            t=5*i;
+            document.write("<br>"+t);
+            i++
+        } while (i<=10);
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+		<h1>1-100 number print in table formate.</h1>
+		<table border="1" width="100%" bgcolor="skyblue"cellpadding="10">
+			<script>
+				var a=1;
+				document.write("<tr>")
+				while (a<100) {
+					var b=0;
+					while(b<10){	
+						var c=a+b;
+						document.write("<td>"+c+"</td>");
+						b++;
+					}
+						document.write("<tr>");
+					a+=10;
+				}
+			</script>
+		</table>
+
+
+
+
+  <!-- <table border="1" width="100%" bgcolor="skyblue"cellpadding="10">
+			<script>
+			var i=1;
+			document.write("<tr>")                
+				while (i<=10){                    
+					var j=1,k=0;
+						while(j<=10){
+							document.write(`<td>${i+k}</td>`);    
+							k+=10;
+							j++;
+						}
+					document.write("</tr>")
+					i++;
+				}	
+		</script>	
+		</table> -->	
+
+
+
+
+
+		<h1>1-30 table print in table formate.</h1>
+		<table border="1" width="100%" bgcolor="skyblue"cellpadding="10">
+			<script type="text/javascript">
+				var i=1;
+				document.write("<tr>")
+				while(i<=10){
+					var j=1;
+					while(j<=30){
+						var k=i*j;
+						document.write("<td>"+k+"</td>");
+						j++;
+					}
+					i++;
+					document.write("</tr>")
+
+				}
+			</script>
+		</table>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">object</h1>
+    <!-- <script>
+        const obj={
+            fname:"chaitanya",
+            lname:"jagtap",
+            email:"chaitanyajagtap@gmail.com",
+            phone:"1234567890",
+            address:"pune",
+            fullName : function() {
+                return this.fname + " " + this.lname;
+            }
+            
+        }
+        console.log(obj)
+        
+        for(key in obj)
+        {
+            if(typeof(obj[key])!== 'function')
+            {
+                document.write("<br>"+key);
+                document.write(":"+obj[key]);   
+            }
+            else
+            {
+                document.write("<br>"+key);
+                document.write(":"+obj.fullName());
+            }
+        }
+
+
+       
+    </script> -->
+
+
+    <br>
+    <br>
+
+    <!-- chat gpt //or -->
+    <!-- <script>
+    const obj1 = {
+        fname: "chaitanya",
+        lname: "jagtap",
+        email: "chaitanyajagtap@gmail.com",
+        phone: "1234567890",
+        address: "pune",
+        fullName: function() {
+            return this.fname + " " + this.lname;
+        }
+    };
+
+    console.log(obj1);
+
+    for (const key in obj1) {
+        if (obj1.hasOwnProperty(key) && typeof obj1[key] !== 'function') {
+            document.write("<br>" + key + ": " + obj1[key]);
+        }
+    }
+
+    // Display full name separately
+    document.write("<br>fullName: " + obj1.fullName());
+</script> -->
+
+
+
+
+
+    <!-- <script>                 //  Typeof
+                             //    |
+        var obj2={           //    V
+            1:function()     // function
+            {
+
+            },
+            2:undefined,      // undefine 
+            3:null,           //  object 
+            4:4123,           //  number 
+            5:NaN,            //  number
+            
+        }
+        for(key in obj2)
+        {
+            console.log(typeof(obj2[key]));
+        }
+
+    </script> -->
+
+
+
+    <script>
+        // nexted object
+
+        var obj4 = {
+            name: "ram",
+            age: 23,
+            address: {
+                city: "paithan",
+                state: "Maharashtra",
+                pincode: 431107
+            },
+            phone: [
+                123456789,
+                987654321
+            ],
+            email: "ram@gmail.com",
+            gender: "male"
+        }
+
+        // printing object
+
+        // console.log(obj4.name)
+
+
+    </script>
+
+    <table border="1" width="100%">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>address</th>
+            <th>phone</th>
+            <th>email</th>
+            <th>gender</th>
+        </tr>
+        <tr>
+            <td>
+                <script>
+                    document.write(obj4.name)
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write(obj4.age)
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write(obj4.address.city+" "+obj4.address.state +" "+obj4.address.pincode)
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write(obj4.phone[0]+" , "+obj4.phone[1])
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write(obj4.email)
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write(obj4.gender)
+                </script>
+            </td>
+        </tr>
+        <script>
+            document.write(obj4.name)
+        </script>
+    </table>
+
+</body>
+
+</html>

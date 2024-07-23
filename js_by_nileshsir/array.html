@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>array</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Learn array concept</h1>
+
+
+    <h4>1. in this we learn how to declear a array and how to display it :</h4>
+    <script>
+        
+        // declearation of array is
+
+        // 1st way
+        document.write("declearation of array is:   &nbsp&nbsp&nbsp var arr = [1,2,3,4,5,6,7,8,9,10] <br><br> op is :")
+
+        var arr = new Array(1,2,3,4,5,6,7,8);
+
+        console.log(arr[1]);
+
+        // 2nd way
+        var arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        console.log(arr1[5]);
+
+        // for display all avalue in array is 
+    for(var i=0;i<arr1.length;i++)
+        {
+            document.write(arr1[i] +"&nbsp");
+        }
+    </script>
+
+    <h4>2. in this we learn how to sum all array element in present  array :</h4>
+
+    <script>
+        var a=[1,2,3,4,5,6,7,8,9,10];
+        var sum=0;
+        document.write("The array is :"+a);
+
+        document.write("<br><br> The sum of all elements is : ");
+
+    for(var i=0;i<a.length;i++)
+    {       
+        sum=sum+a[i];
+    }
+    document.write(sum);
+    </script>
+
+    <h4>3. To store a value using for loop :</h4>
+    <script>
+        let arr2= new Array();
+
+        for(var i=0;i<50;i++)
+    {
+        arr2[i]=i+1;
+    }
+        document.write("The after storing value in array using for loop : <br>" + arr2);
+    </script>
+
+    <h4>4. create a array and store the value 1-100 and the display only even value in that :</h4>
+
+    <script>
+        var arr3 =[];
+        for(var i=0;i<100;i++)
+    {
+        arr3[i]=i+1;
+    }
+    document.write("The array is : <br>"+arr3);
+
+    document.write("<br> The even value in an array is: <br> ");
+
+    for(i=0;i<arr3.length;i++)
+    {
+        if(arr3[i]%2==0)
+    {
+        
+        document.write("&nbsp"+arr3[i]);
+    }
+    }
+    </script>
+
+    <h4>5. array methods :</h4>
+    <ol>
+        <li>reverse() :print in reverse order</li>
+        <li>shift() : starting chi value delete karte</li>
+        <li>unshift() : starting la value add karte syntax= unshift(value); </li>
+    </ol>
+
+    <script>
+
+        // 1. reverse(); :-> its reverse the array by using index.
+
+        document.write("The array is :");
+        var arr4 = [1,2,3,4,5,6,7,8,9,10];
+        document.write(arr4);
+        
+        document.write("<br><br>To print in reverse order use : reverse() .");
+        arr4.reverse()
+        document.write("<br><br>using reverse function: "+arr4);
+
+        document.write("<hr>");
+        
+        // 2. shift(); :-> value remove karte starting chi.
+        
+        var arr5 = [1,2,3,4,5,6,7,8,9,10];
+        document.write("<br><br> The array is before using shift() : "+arr5);
+        arr5.shift();
+        document.write("<br><br> The array is After using shift() : "+arr5);
+        
+        document.write("<hr>");
+
+        // 3 unshift();  :-> starting la value add karte.
+        var arr6 = [1,2,3,4,5,6,7,8,9,10];
+        document.write("<br><br> The array is before using unshift() : "+arr6);
+        arr6.unshift(11,12,13 )
+        document.write("<br><br> The array is After using unshift() : "+arr6);
+
+        document.write("<hr>");
+
+
+        // 2. pop(); :-> value remove karte last chi.
+        
+        var arr6 = [1,2,3,4,5,6,7,8,9,10];
+        document.write("<br><br> The array is before using pop() : "+arr6);
+        arr6.pop();
+        document.write("<br><br> The array is After using pop() : "+arr6);
+        
+        document.write("<hr>");
+
+
+
+        // 3 push();  :-> last la value add karte.
+        var arr8 = [1,2,3,4,5,6,7,8,9,10];
+        document.write("<br><br> The array is before using push() : "+arr8);
+        arr8.push(11,12,13 )
+        document.write("<br><br> The array is After using push() : "+arr8);
+
+
+    </script>
+
+    <h4>6. Nexted array :</h4>
+    <script>
+        
+    let Student = ["name",["f_name", "m_name","l_name"] ,"email" ,1234567890];
+    // document.write(Student[1][0]+"<br>");
+    // document.write(Student[1][1]+"<br>");
+    document.write(Student[0]+"<br>");
+    document.write(Student[1]+"<br>");
+    document.write("<hr>");
+    document.write(Student[1][0]+"<br>");
+    document.write(Student[1][1]+"<br>");
+    document.write(Student[1][2]+"<br>");
+    document.write("<hr>");
+    document.write(Student[2]+"<br>");
+    document.write(Student[3]+"<br>");
+    </script>
+
+
+    <h4>7. array object :</h4>  
+
+        <script>
+            var student=[
+			{"name":"student1","email":"student1@gmail.com"},
+			{"name":"student2","email":"student2@gmail.com"},
+			{"name":"student3","email":"student3@gmail.com"},
+			{"name":"student4","email":"student4@gmail.com"},
+         ]
+
+         document.write(student +"<br>");
+         document.write(student[0].name+"<br>");
+         document.write(student[0].email);
+
+        </script>
+
+        <table border="1" width="100%" style="background-color: aqua;">
+            <tr style="background-color: aquamarine;">
+                <th>name</th>
+                <th>email</th>
+            </tr>
+            <script>
+                for(var i=0;i<student.length;i++)
+            {
+                document.write("<tr>");
+                document.write("<td>"+student[i].name+"</td>");
+                document.write("<td>"+student[i].email+"</td>");
+                document.write("</tr>")
+            }
+            </script>
+        </table>
+
+        <!-- <table border="1" width="100%">
+            <tr>
+                <th>name</th>
+                <th>email</th>
+            </tr>
+            <script>
+              
+                for(var j=0;j<student.length;j++)
+              {
+                document.write("<tr>");
+                document.write("<td>"+student[j].name+"</td>");
+                document.write("<td>"+student[j].email+"</td>");
+                document.write("</tr>");
+              }
+            </script>
+        </table> -->
+    <br>
+    <br>
+    <br>
+
+    <script>
+        
+    var array_object=[
+        {
+            fname: "ram",
+            lname:"jagtap",
+            full_name:function(){
+                return this.fname+" "+this.lname;
+            },
+            age: 23,
+            address: {
+                city: "paithan",
+                state: "Maharashtra",
+                pincode: 431107
+            },
+            email:"ram@gmail.com"
+        },
+        {
+            fname:"sham",
+            lname:"wable",
+            full_name:function(){
+                return this.fname+" "+this.lname;
+            },
+            age: 25,
+            address: {
+                city: "pune",
+                state: "Maharashtra",
+                pincode: 411072
+            },
+            email:"sham@gmail.com"
+        },
+        {
+            fname:"pream",
+            lname:"yadav",
+            full_name:function(){
+                return this.fname+" "+this.lname;
+            },
+            age: 35,
+            address: {
+                city: "mumbai",
+                state: "Maharashtra",
+                pincode: 47822
+            },
+            email:"pream@gmail.com"
+        },
+
+    ];
+
+    console.log(array_object[0].fname);
+    console.log(array_object[0].address);
+    console.log(array_object[0].full_name());
+
+
+    </script>
+
+    <table border="1" width="100%">
+        <tr>
+            <th>fname</th>
+            <th>lname</th>
+            <th>full_name</th>
+            <th>age</th>
+            <th>address</th>
+            <th>email</th>
+        </tr>
+
+        <script>
+            for(var i=0;i<array_object.length;i++)
+        {
+            document.write("<tr>")
+            document.write("<td>"+array_object[i].fname+"</td>")
+            document.write("<td>"+array_object[i].lname+"</td>")
+            document.write("<td>"+array_object[i].full_name()+"</td>")
+            document.write("<td>"+array_object[i].age+"</td>")
+            document.write("<td>"+array_object[i].address.city+" "+array_object[i].address.pincode+"</td>")
+            document.write("<td>"+array_object[i].email+"</td>")
+            document.write("</td>")
+        }
+        </script>
+
+    </table>
+
+
+    
+</body>
+
+</html>
