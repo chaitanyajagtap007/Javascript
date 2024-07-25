@@ -7,11 +7,23 @@
     <title>Dom</title>
 </head>
 <body>  
-    <script>
-        var dd=document;
-        var dd=document.body;
-        var dd=document.head;
-        console.log(dd);
-    </script>
+    <h1>DOM</h1>
+
 </body>
+
+<script>
+    const div=document.createElement('div')
+    console.log(div)
+    div.className="main"
+    div.id=Math.round(Math.random()*10+1)
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor="red"
+    div.style.padding="10px"
+
+    const addText=document.createTextNode("Chaitanya Jagtap")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+
+</script>
 </html>
