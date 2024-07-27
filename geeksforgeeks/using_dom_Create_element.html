@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="create_element()">Clink me to create element using Dom</button>
+</body>
+<script>
+    function create_element(){
+        // use to create element :-createElement
+        var element = document.createElement("h1");
+        // console.log(element);
+
+        // to write any text in that use :-textContent
+        element.textContent="this is created using dom"
+
+        // to display in side the body tag use :-appendChild
+        document.body.appendChild(element);
+    }
+</script>
+</html>
